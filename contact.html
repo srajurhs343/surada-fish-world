@@ -25,7 +25,8 @@
     <p>Phone: +1 (234) 567-890</p>
     <p>Location: Fisheries colony, Junlighat, Port Blair, India</p>
 
-    <form>
+    <!-- ✅ Updated Form with Formspree -->
+    <form action="https://formspree.io/f/mgvnybgw" method="POST">
       <label for="name">Your Name:</label><br>
       <input type="text" id="name" name="name" required><br><br>
 
@@ -34,6 +35,12 @@
 
       <label for="message">Message:</label><br>
       <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+      <!-- Optional hidden field for subject line -->
+      <input type="hidden" name="_subject" value="New Contact Form Submission - Surada Fish World">
+
+      <!-- Optional redirect after submit -->
+      <input type="hidden" name="_next" value="https://srajurhs343.github.io/surada-fish-world/thank-you.html">
 
       <button type="submit">Send</button>
     </form>
